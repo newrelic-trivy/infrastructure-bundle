@@ -1,6 +1,6 @@
 # Version of the base agent image to use (`newrelic/infrastructure).
 # This is used by the `docker-build.sh` wrapper if AGENT_VERSION is not set
-agentVersion: 1.65.1
+agentVersion: 1.65.4
 
 # url, stagingUrl, and repo fields are compiled as templates. The `trimv` helper function can be used to remove the leading v
 # from a version string.
@@ -38,7 +38,7 @@ integrations:
   - name: nri-apache
     version: v1.15.1
   - name: nri-cassandra
-    version: v2.14.4
+    version: v2.14.5
   - name: nri-consul
     version: v2.9.2
   - name: nri-couchbase
@@ -87,4 +87,4 @@ integrations:
     testFiles:
       - /var/db/newrelic-infra/nri-discovery-kubernetes
   - name: nri-mssql
-    version: v2.19.1
+    version: v2.20.0
